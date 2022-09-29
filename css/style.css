@@ -4,6 +4,9 @@
     --logo-header-height:50px;
     --logo-sony-header-width:100px;
 
+    /* color */
+    --cta-btn-bg:#363636;
+
 }
 body{
     background-color: aqua;
@@ -12,7 +15,25 @@ body{
 img{
     width: 100%;
 }
+
+/* color bg */
+
+.cl-black{
+    color: black;
+}
+
+
+/* button */
+
+.btn.btn-primary.custom_cta{
+    background-color:var(--cta-btn-bg) ;
+    border: none;
+    font-weight: 700;
+
+}
 /* costuom */
+
+
 .custom_card-bg{
     background-color: transparent;
     border: 0;
@@ -24,6 +45,15 @@ img{
 
 .custom_pt{
     padding-top: 6em;
+}
+
+.custom_nav-link{
+    color: black;
+    font-weight: 700;
+}
+
+.custom_nav-link::after{
+    color: var(--bs-nav-link-color);
 }
 
 /* header */
