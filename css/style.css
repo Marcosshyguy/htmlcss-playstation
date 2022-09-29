@@ -1,12 +1,16 @@
 :root{
+    /* siza */
     --nav-height:80px;
+    --logo-header-height:50px;
+    --logo-sony-header-width:100px;
+
 }
 body{
     background-color: aqua;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 /* costuom */
 .custom_card-bg{
@@ -21,6 +25,19 @@ img{
 .custom_pt{
     padding-top: 6em;
 }
+
+/* header */
+
+#logo-header{
+    height: var(--logo-header-height);
+    background-color: black;
+}
+
+#logo-header img{
+    width: var(--logo-sony-header-width);
+}
+
+
 /* jumbotron */
 
 #jumbotron-top,
