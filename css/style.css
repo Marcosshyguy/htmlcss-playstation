@@ -8,6 +8,15 @@ body{
 img{
     max-width: 100%;
 }
+/* costuom */
+.custom_card-bg{
+    background-color: transparent;
+    border: 0;
+}
+
+.custom_card-p{
+    padding: 0;
+}
 
 .custom_pt{
     padding-top: 6em;
