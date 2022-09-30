@@ -40,6 +40,8 @@ img{
     border: none;
 }
 
+
+
 /* customm */
 
 .custom_py{
@@ -84,16 +86,18 @@ img{
 #jumbotron-top,
 #jumbotron-bottom{
     width: 100%;
-    height: var(--jumbo-heigh);
-    /* debug */
+    min-height: var(--jumbo-heigh);
+    background-size: cover;
+    background-position: center;
     background-color: blue;
 }
 
 #jumbotron-top{
-    /* background-image: url(../img/it-takes-two-hero-banner-desktop.jpg); */
-    
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../img/jumbo-bg.png);
+}
+
+#jumbotron-bottom{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
 
