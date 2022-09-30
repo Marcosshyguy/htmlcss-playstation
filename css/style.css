@@ -8,6 +8,8 @@
     /* color */
     --cta-btn-bg:#363636;
     --btn-download:#CD3D0F;
+    --bg-plus:#BEBCBB;
+    --bg-now:#161C3B;
 }
 
 img{
@@ -24,7 +26,13 @@ img{
     color: white;
 }
 
+.bg-plus{
+    background-color: var(--bg-plus);
+}
 
+.bg-now{
+    background-color: var(--bg-now);
+}
 
 /* button */
 
@@ -45,7 +53,7 @@ img{
 /* customm */
 
 .custom_py{
-    padding: 2em 0;
+    padding: 4em 0;
 }
 .custom_card-bg{
     background-color: transparent; /*da inserire in card*/
@@ -88,7 +96,7 @@ img{
     width: 100%;
     min-height: var(--jumbo-heigh);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-color: blue;
 }
 
