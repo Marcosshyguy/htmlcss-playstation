@@ -10,11 +10,22 @@
     --btn-download:#CD3D0F;
     --bg-plus:#BEBCBB;
     --bg-now:#161C3B;
+    --bg-footer:#00439C;
 }
 
 img{
     width: 100%;
 }
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* color bg */
 
@@ -34,6 +45,9 @@ img{
     background-color: var(--bg-now);
 }
 
+.bg-footer{
+    background-color: var(--bg-footer);
+}
 /* button */
 
 .btn.btn-primary.custom_cta{
@@ -109,4 +123,9 @@ img{
 }
 
 
+/* footer */
 
+.footer-top img,
+.footer-bottom img{
+    width: 60px;
+}
