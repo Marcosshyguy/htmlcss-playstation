@@ -129,6 +129,26 @@ a{
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
+/* games-section */
+
+
+.games-card{
+    transition: all 1s;
+    border-radius: 15px;
+    overflow-x: hidden;
+}
+
+.games-card-current img{
+    border-radius: 15px;
+    outline: 2px blue solid;
+    padding: .1em;
+}
+
+.games-card:hover{
+    transform: translatey(-10%);
+}
+
+
 /* ps5-section */
 
 
@@ -148,11 +168,6 @@ a{
     font-weight: 600;
     color: black;
 }
-
-
-
-
-
 
 /* footer */
 
