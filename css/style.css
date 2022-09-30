@@ -67,8 +67,15 @@ a{
 /* customm */
 
 .custom_py{
-    padding: 4em 0;
+    padding: 4rem 0;
 }
+
+.custom_pt-jumbo{
+    padding-top: 10rem;
+    
+}
+
+
 .custom_card-bg{
     background-color: transparent; /*da inserire in card*/
     border: 0;
