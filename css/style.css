@@ -1,16 +1,13 @@
 :root{
-    /* siza */
+    /* size */
     --nav-height:80px;
     --logo-header-height:50px;
     --logo-sony-header-width:100px;
-    --jumbo-heigh:400px;
+    --jumbo-heigh:450px;
 
     /* color */
     --cta-btn-bg:#363636;
     --btn-download:#CD3D0F;
-}
-body{
-    background-color: aqua;
 }
 
 img{
@@ -26,6 +23,8 @@ img{
 .cl-white{
     color: white;
 }
+
+
 
 /* button */
 
@@ -47,12 +46,12 @@ img{
     padding: 2em 0;
 }
 .custom_card-bg{
-    background-color: transparent;
+    background-color: transparent; /*da inserire in card*/
     border: 0;
 }
 
-.custom_card-p{
-    padding: 0;
+.custom_card-p{    /*da inserire in card-box*/
+    padding: 0; 
 }
 
 /* .custom_jumbo-col{
@@ -87,11 +86,11 @@ img{
     width: 100%;
     height: var(--jumbo-heigh);
     /* debug */
-    background-color: beige;
+    background-color: blue;
 }
 
 #jumbotron-top{
-    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    /* background-image: url(../img/it-takes-two-hero-banner-desktop.jpg); */
     
     background-size: contain;
     background-repeat: no-repeat;
