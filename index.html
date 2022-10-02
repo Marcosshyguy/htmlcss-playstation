@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -25,88 +27,154 @@
             </div>
         </div>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-light" >
+        <div id="navigation">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="img/play_logo.svg" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li>
-                        <div class="hidden">
-                            <div class="flexer">
-                                <img src="img/play-menu-ico.png" alt="">
-                                <!-- <img src="img/play-menu-ico.png" alt="">
-                                <img src="img/play-menu-ico.png" alt=""> -->
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button">
-                            Giochi
+                <div class="row row-cols-1">
+                    <nav class="navbar navbar-expand-lg bg-light col" >
+                        <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/play_logo.svg" alt="">
                         </a>
-                    </li>
-                    <li>
-                        <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Hardware
-                          </a>
-                          <div class="hidden">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li>
+                                    <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" >
+                                        Giochi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" aria-expanded="false">
+                                        Hardware
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Servizi
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Novità
+                                    </a>
+                                    <div class="dropdown-menu">
+                                    vnsdjfnsigbwepivbwpeidbwpigvw
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Fai Acquisti
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Supporto
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li>
+                                    <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        My PLayStation
+                                    </a>
+                                </li>
+                                <li>
+                                    <form class="d-flex" role="search">
+                                        <button class="btn rounded-pill btn-primary custom_cta" type="submit">Search</button>
+                                    </form>
+                                </li>
+                                <li>
+                                    <a class="nav-link custom_nav-link">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
                             
                         </div>
-                    </li>
-                    <li>
-                        <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servizi
-                          </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Novità
-                        </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Fai Acquisti
-                          </a>
-                    </li>
-                    <li>
-                        <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Supporto
-                          </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li>
-                        <a class="nav-link custom_nav-link dropdown-toggle chevron" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            My PLayStation
-                          </a>
-                    </li>
-                    <li>
-                        <form class="d-flex" role="search">
-                            <button class="btn rounded-pill btn-primary custom_cta" type="submit">Search</button>
-                          </form>
-                    </li>
-                    <li>
-                        <a class="nav-link custom_nav-link">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                    </li>
-                </ul>
-                
-              </div>
+                        </div>
+                    </nav>
+                    <div class="col hidden">
+                        <div>
+                            <div class="consoles d-flex justify-content-center text-center mt-2">
+                                <figure class="me-4">
+                                    <img src="img/play-menu-ico.png" alt="console-icon">
+                                    <p>Playstation5</p>
+                                </figure>
+                                <figure class="me-4">
+                                    <img src="img/play-menu-ico.png" alt="console-icon">
+                                    <p>Playstation4</p>
+                                </figure>
+                                <figure>
+                                    <img src="img/play-menu-ico.png" alt="console-icon">
+                                    <p>Playstation3</p>
+                                </figure>
+                            </div>
+                            <ul class="d-flex w-100 justify-content-center ">
+                                <li class="me-4">
+                                    <a>
+                                    link-utili
+                                    </a>
+                                </li>
+                                <li class="me-4">
+                                    <a >
+                                    link-utili
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                    link-utili
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </nav>
+        </div>
+
+
+
+        <!-- <div class="container-fluid hidden">
+            <div>
+                <div class="consoles d-flex justify-content-center text-center mt-2">
+                    <figure class="me-4">
+                        <img src="img/play-menu-ico.png" alt="console-icon">
+                        <p>Playstation5</p>
+                    </figure>
+                    <figure class="me-4">
+                        <img src="img/play-menu-ico.png" alt="console-icon">
+                        <p>Playstation4</p>
+                    </figure>
+                    <figure>
+                        <img src="img/play-menu-ico.png" alt="console-icon">
+                        <p>Playstation3</p>
+                    </figure>
+                </div>
+                <ul class="d-flex w-100 justify-content-center ">
+                    <li class="me-4">
+                        <a>
+                        link-utili
+                        </a>
+                    </li>
+                    <li class="me-4">
+                        <a >
+                        link-utili
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                        link-utili
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
     </header>
+
     <!-- end header -->
+
     <!-- main -->
     <main>
         <!-- jumbotrob-1 -->
@@ -119,7 +187,7 @@
                             <div>
                               <h2>ROMPI IL CERCHIO</h2>
                               <p>Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo thriller fantascientifico, disponibille in escusiva su Ps5</p>
-                              <a href="#" class="btn rounded-pill btn-primary custom_button-download">Aquista Ora</a>
+                              <a href="#" class="custom_btn jumbo-btn">Aquista Ora</a>
                             </div>
                         </div> 
                         
@@ -191,19 +259,19 @@
                 <p>Tuffati nelle nuove possibilità di gioco completamente inaspettato</p>
                 <div class="row custom-py">
                     <div class="col-12 col-md-5 d-flex align-items-md-center">
-                        <div class="card custom_card-bg text-start">
-                            <div class="card-body custom_card-p">
+                        <div class="custom_card text-start">
+                            <div class="card-body">
                                 <h3 class="card-title">
                                 Playstation 5
                                 </h3>
-                                <p class="card-text">Sperimenta la nuova generazione di incredibili giochi PLayStation</p>
-                                <a href="#" class="btn btn-primary">Maggiori Informazioni</a>
+                                <p>Sperimenta la nuova generazione di incredibili giochi PLayStation</p>
+                                <a href="#" class="custom_btn primary-btn">Maggiori Informazioni</a>
                             </div>
                           </div>
                     </div>
                     <div class="col-12 col-md-7">
-                        <div class="card custom_card-bg">
-                            <img src="img/playstation-5-thumb.png" class="card-img-top" alt="playstation-5-console">
+                        <div class="custom_card">
+                            <img src="img/playstation-5-thumb.png" alt="playstation-5-console">
                         </div>
                     </div>
                 </div>
@@ -219,7 +287,7 @@
                     </div>
 
                     <div class="col">
-                        <div class="custom_card ps5-card ">
+                        <div class="custom_card ps5-card">
                             <a href="">
                                 <img src="img/remote-thumb.png" alt="ps5-remote">
                                 <p class="d-none d-md-inline">Telecomando Media</p>
@@ -265,12 +333,12 @@
             <div class="container">
                 <div class="row custom_py">
                     <div class="col-12 col-lg-5">
-                        <div class="card cl-white custom_card-bg">
+                        <div class="custom_card cl-white">
                             <img src="img/it-takes-two-logo.png" class="card-img-top w-50" alt="Returnal-logo">
-                            <div class="card-body custom_card-p">
+                            <div class="custom_card">
                               <h2 class="card-title">UNA COOPERATIVA SELVAGGIA TI ATTENDE</h2>
                               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ullam eligendi sed recusandae nemo quod cumque sint dolores eum adipisci!</p>
-                              <a href="#" class="btn rounded-pill btn-primary custom_button-download">Aquista Ora</a>
+                              <a href="#" class="custom_btn jumbo-btn">Aquista Ora</a>
                             </div>
                         </div> 
                         
@@ -285,77 +353,77 @@
             <div class="container">
                 <div class="row g-3 row-cols-2 row-cols-sm-3 row-cols-lg-6 custom_py cl-white">
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot" class="rounded-2">
                             <p>Crash Bandicoot - It's About Time</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="
                             tony-hawk"d class="rounded-3">
                             <p>Tony Hawk - Pro Skater 3</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot"d class="rounded-3">
                             <p>Crash Bandicoot - It's About Time</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="
                             tony-hawk"d class="rounded-3">
                             <p>Tony Hawk - Pro Skater 3</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot"d class="rounded-3">
                             <p>Crash Bandicoot - It's About Time</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="
                             tony-hawk"d class="rounded-3">
                             <p>Tony Hawk - Pro Skater 3</p>
                         </div>
                     </div><div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot"d class="rounded-3">
                             <p>Crash Bandicoot - It's About Time</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="
                             tony-hawk"d class="rounded-3">
                             <p>Tony Hawk - Pro Skater 3</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot"d class="rounded-3">
                             <p>Crash Bandicoot - It's About Time</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="
                             tony-hawk"d class="rounded-3">
                             <p>Tony Hawk - Pro Skater 3</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="crash-bandicoot"d class="rounded-3">
                             <p>Crash Bandicoot - It's About Time</p>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card custom_card-bg">
+                        <div class="custom_card">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="
                             tony-hawk"d class="rounded-3">
                             <p>Tony Hawk - Pro Skater 3</p>
@@ -378,7 +446,7 @@
                                 <div>
                                     <h2>Playstation 4</h2> <!-- removed  bootstrap card for a better life style -->     
                                     <p>Giochi incredibili live da Ps4, con 1TB di spazio di archiviazione.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill">Scopri di più</a>
+                                    <a href="#" class="custom_btn primary-btn">Scopri di più</a>
                                 </div>
                             </div> 
                         </div>
@@ -388,7 +456,7 @@
                                 <div>
                                     <h2>Accessori</h2> <!-- removed  bootstrap card for a better life style -->
                                     <p>Migliora la tua esperienza di gioco con una gamma di accessori ufficiali.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill">Scopri di più</a>
+                                    <a href="#" class="custom_btn primary-btn">Scopri di più</a>
                                 </div>
                             </div>
                         </div>
@@ -398,7 +466,7 @@
                                 <div>
                                     <h2>Playstation VR</h2> <!-- removed  bootstrap card for a better life style -->
                                     <p>Oltre 500 titoli ed esperienze di gioco. Scoprili tutti e ne vedrai delle belle.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill">Scopri di più</a>
+                                    <a href="#" class="custom_btn primary-btn">Scopri di più</a>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +485,7 @@
                             <img src="img/ps-plus-logo.png" alt="ps-plus">
                             <div>
                                 <p class="my-4">Migliora la tua esperienza Playstation con l'accesso multigiocatore online, giochi mensili, sconti esclusivi</p>
-                                <a href="#" class="btn btn-primary">Esplora Playstation Plus</a>
+                                <a href="#" class="custom_btn  plus-btn">Esplora Playstation Plus</a>
                             </div>
                         </div>
                     </div>
@@ -477,7 +545,7 @@
                             <img src="img/ps-now-logo-two-column.png" alt="ps-plus">
                             <div>
                                 <p class="my-4">Ottieni l'accesso ad una vastissima raccolta di oltre 800 giochi PS2, PS3 e PS4 su PS4 e PC Windows, con nuovi titoli aggiunti ogni mese</p>
-                                <a href="#" class="btn btn-primary">Esplora Playstation Now</a>
+                                <a href="#" class="custom_btn now-btn">Esplora Playstation Now</a>
                             </div>
                         </div>
                     </div>

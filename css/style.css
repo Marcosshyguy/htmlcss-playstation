@@ -1,3 +1,4 @@
+
 :root{
     /* size */
     --nav-height:80px;
@@ -8,6 +9,8 @@
     /* color */
     --cta-btn-bg:#363636;
     --btn-download:#CD3D0F;
+    --btn-primary:#2D64E6;
+    --btn-plus:#D9DADC;
     --bg-plus:#BEBCBB;
     --bg-now:#161C3B;
     --bg-footer:#00439C;
@@ -48,9 +51,52 @@ a{
 .bg-footer{
     background-color: var(--bg-footer);
 }
-/* button */
+/* custom button */
+.custom_btn{
+    display: inline-block;
+    padding: .4rem .9rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    transition: all 1s;
+}
 
-.btn.btn-primary.custom_cta{
+.jumbo-btn{
+    background-color: var(--btn-download);
+}
+
+.primary-btn{
+    background-color: var(--btn-primary);
+    color: white;
+}
+
+
+.plus-btn{
+    background-color: var(--btn-plus);
+    color: blue;
+}
+
+.now-btn{
+   background-color: white; 
+   color:black;
+}
+
+.custom_btn:hover{
+    filter: brightness(110%);
+    outline: 3px rgba(0, 0, 0, 0.311) groove;
+    
+}
+
+.custom_btn.now-btn:hover{
+    filter: invert(100%);
+    color: initial;
+    
+}
+
+.custom_btn.primary-btn:hover{
+    color: white;
+}
+
+/* .btn.btn-primary.custom_cta{
     background-color:var(--cta-btn-bg) ;
     border: none;
     font-weight: 700;
@@ -60,7 +106,7 @@ a{
     background-color: var(--btn-download);
     color: white;
     border: none;
-}
+} */
 
 
 
@@ -75,20 +121,7 @@ a{
     
 }
 
-
-.custom_card-bg{
-    background-color: transparent; /*da inserire in card*/
-    border: 0;
-}
-
-.custom_card-p{    /*da inserire in card-box*/
-    padding: 0; 
-}
-
-/* .custom_jumbo-col{
-    padding: 4em 0 2em 0;
-} */
-
+/* custom navbar */
 .custom_nav-link{
     color: black;
     font-weight: 700;
@@ -109,32 +142,48 @@ a{
     content: "\f077";
 }
 
-nav li{
-    position: relative
-}
+/* dropdown navbar bonus*/
+
 
 .hidden{
-    display: inline-block;
-    width:100vw;
-    height: 300px;
-    position: absolute;
-    top: 60px;
-    left: -78px;
-    background-color: antiquewhite;
+    width:100%;
+    height: 250px;
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.177);
     
     display: none;
 }
 
-.hidden img{
-    width: 100px;
+.hidden ul li {
+    list-style:circle;
 }
 
-.flexer{
+.hidden figure:hover{
+    outline: 1px rgba(0, 0, 0, 0.382) solid;
+}
+
+
+@media screen and (min-width:960px){
+    #navigation > .container-fluid:hover  .hidden{
+        display: block;
+    }
+    #navigation > .container-fluid:hover .chevron:first-child:after{
+        content: "\f078";
+    }
+
+}
+
+
+/* .hidden img{
+    width: 100px;
+} */
+
+/* .flexer{
     display: flex;
 }
 nav li:hover .hidden{
     display: block;
-}
+} */
 
 
 
@@ -205,6 +254,7 @@ nav ul{
 
 .ps5-card:hover{
     border-bottom: 8px lightskyblue solid;
+    margin-bottom: -1px;
 }
 
 .ps5-card:hover img{
